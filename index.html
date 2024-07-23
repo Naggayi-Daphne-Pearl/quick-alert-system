@@ -65,7 +65,7 @@
       <div
         class="banner"
         style="
-          background: url('img/dummy-background.jpeg') no-repeat center;
+          background: url('img/fire-alarm-1.jpg') no-repeat center;
           background-size: cover;
           height: 300px;
         "
@@ -103,31 +103,52 @@
         <div class="content-table flex-column">
           <!-------------------------------------------------------------------------------------------->
           <!--Start Intro-->
-          <div class="flex-row">
-            <div class="flex-item flex-column">
-              <img class="image" src="img/dummay-img.png" />
-            </div>
-            <div class="flex-item flex-column">
-              <p class="text text-large">
-                <a target="_blank" href="https://gitlab.com/daphnepearl101"
-                  >NAGGAYI DAPHNE PEARL </a
-                >, 23/U/13097/EVE<br />
-                <a target="_blank" href="https://github.com/AnandaGaliwango">GALIWANGO ANANDA</a
-                >, 23/U/25628/PS<br />
-                <a target="_blank" href="https://github.com/kayas111">OPIO ISAAC </a>,
-                19/U/17809/PS<br />
-                <br />
-                <a target="_blank" href="https://www.mak.ac.ug/"
-                  >MAKERERE UNIVERSITY</a
-                ><br />
-                <a target="_blank" href="https://cs.mak.ac.ug/"
-                  >DEPARTMENT Of COMPUTER SCIENCE </a
-                ><br />
-
-                <a target="_blank" href="https://maps.app.goo.gl/gTqBs7f662eWbi3PA">Kampala,Uganda</a>
-              </p>
+          <div class="content">
+            <div class="content-table flex-column">
+              <div
+                class="flex-row"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin: 20px 0;
+                "
+              >
+                <div class="flex-item flex-column" style="flex: 1">
+                  <img
+                    class="image"
+                    src="img/fire-alarm-1.jpg"
+                    style="max-width: 100%; height: auto; margin-right: 20px"
+                  />
+                </div>
+                <div class="flex-item flex-column" style="flex: 1">
+                  <div class="text text-large" style="font-size: 1.2em">
+                    <a target="_blank" href="https://gitlab.com/daphnepearl101"
+                      >NAGGAYI DAPHNE PEARL</a
+                    >, 23/U/13097/EVE<br />
+                    <a target="_blank" href="https://github.com/AnandaGaliwango"
+                      >GALIWANGO ANANDA</a
+                    >, 23/U/25628/PS<br />
+                    <a target="_blank" href="https://github.com/kayas111"
+                      >OPIO ISAAC</a
+                    >, 19/U/17809/PS<br /><br />
+                    <a target="_blank" href="https://www.mak.ac.ug/"
+                      >MAKERERE UNIVERSITY</a
+                    ><br />
+                    <a target="_blank" href="https://cs.mak.ac.ug/"
+                      >DEPARTMENT Of COMPUTER SCIENCE</a
+                    ><br />
+                    <a
+                      target="_blank"
+                      href="https://maps.app.goo.gl/gTqBs7f662eWbi3PA"
+                      >Kampala,Uganda</a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <!--End Intro-->
           <!-------------------------------------------------------------------------------------------->
 
@@ -139,91 +160,168 @@
               <hr />
               <h3>Problem Statement</h3>
               <p class="text">
-                Sudden fires or high heat can cause significant damage to huge businesses, homes,
-                workplaces, and other institutions. While many places have fire alarms and smoke
-                detectors, these systems often fail because there is no immediate response when an alarm goes off and no one is around to hear it. This leaves the premises at risk.
+                Sudden fires or high heat can cause significant damage to huge
+                businesses, homes, workplaces, and other institutions. While
+                many places have fire alarms and smoke detectors, these systems
+                often fail because there is no immediate response when an alarm
+                goes off and no one is around to hear it. This leaves the
+                premises at risk.
               </p>
               <h3>Solution</h3>
               <p class="text">
-                We propose a system to quickly respond to temperature changes using our embedded system.
-                Our system detects preset temperature ranges and sends notifications to responsible individuals, even if they are not nearby. The system expects a response to stop sending alerts. If no action is taken, it escalates the alert, for example, by making a phone call.
+                We propose a system to quickly respond to temperature changes
+                using our embedded system. Our system detects preset temperature
+                ranges and sends notifications to responsible individuals, even
+                if they are not nearby. The system expects a response to stop
+                sending alerts. If no action is taken, it escalates the alert,
+                for example, by making a phone call.
               </p>
-              <p class="text">
-                Our team focused on the issue of overheating in car engines and industrial machinery. High temperatures can cause:
+              <div class="text">
+                Our team focused on the issue of overheating in car engines and
+                industrial machinery. High temperatures can cause:
                 <ul>
                   <li>Cars and machinery to burst into flames.</li>
                   <li>Engine failures.</li>
                   <li>Property damages in institutions.</li>
                 </ul>
-              </p>
+              </div>
               <h3>Project Requirements</h3>
-              <p class="text">
+              <div class="text">
                 <ul>
-                  <li>DHT11: Measures temperature and sends the data to the ESP32.</li>
-                  <li>ESP32: Processes data from the DHT11 and communicates with the SIM800L module.</li>
-                  <li>SIM800L: Sends SMS notifications and can make phone calls.</li>
+                  <li>
+                    DHT11: Measures temperature and sends the data to the ESP32.
+                  </li>
+                  <li>
+                    ESP32: Processes data from the DHT11 and communicates with
+                    the SIM800L module.
+                  </li>
+                  <li>
+                    SIM800L: Sends SMS notifications and can make phone calls.
+                  </li>
                   <li>Connection wires: Connect components.</li>
-                  <li>LM2596 DC-DC 3A Buck Step-Down (optional): Converts high voltage to low voltage required to power our components.</li>
-                  <li>Breadboard: For assembling the circuit during development and testing.</li>
+                  <li>
+                    LM2596 DC-DC 3A Buck Step-Down (optional): Converts high
+                    voltage to low voltage required to power our components.
+                  </li>
+                  <li>
+                    Breadboard: For assembling the circuit during development
+                    and testing.
+                  </li>
                 </ul>
-              </p>
+              </div>
               <h3>Procedures</h3>
-              <p class="text">
+              <div class="text">
                 <ol>
-                  <li>Connect the DHT11 to the ESP32: Test the setup to obtain temperature readings.</li>
-                  <li>Set up SIM800L: Insert a SIM card into the SIM800L and connect it to the ESP32. Test if messages can be sent and received.</li>
-                  <li>Integrate components: Connect the DHT11 and SIM800L to the ESP32. Configure the system to send a notification message when the temperature exceeds a certain threshold.</li>
+                  <li>
+                    Connect the DHT11 to the ESP32: Test the setup to obtain
+                    temperature readings.
+                  </li>
+                  <li>
+                    Set up SIM800L: Insert a SIM card into the SIM800L and
+                    connect it to the ESP32. Test if messages can be sent and
+                    received.
+                  </li>
+                  <li>
+                    Integrate components: Connect the DHT11 and SIM800L to the
+                    ESP32. Configure the system to send a notification message
+                    when the temperature exceeds a certain threshold.
+                  </li>
                 </ol>
-              </p>
+              </div>
               <h3>Use Case</h3>
               <p class="text">
-                Restaurants in Uganda can greatly benefit from our temperature detection alert system, especially during times when the premises are unoccupied. The system ensures that responsible individuals are notified immediately of any fire risk, even when no one is around to manually monitor the situation. This can significantly reduce the risk of fire-related damages.
+                Restaurants in Uganda can greatly benefit from our temperature
+                detection alert system, especially during times when the
+                premises are unoccupied. The system ensures that responsible
+                individuals are notified immediately of any fire risk, even when
+                no one is around to manually monitor the situation. This can
+                significantly reduce the risk of fire-related damages.
               </p>
               <h3>Night Time Monitoring</h3>
               <p class="text">
-                <strong>Scenario:</strong> Many restaurants do not have staff members present during the night.
+                <strong>Scenario:</strong> Many restaurants do not have staff
+                members present during the night.
                 <br />
-                <strong>Solution:</strong> Our system sends alerts if a preset temperature threshold is reached, allowing restaurant owners or managers to take immediate action, even from a remote location.
+                <strong>Solution:</strong> Our system sends alerts if a preset
+                temperature threshold is reached, allowing restaurant owners or
+                managers to take immediate action, even from a remote location.
               </p>
               <h3>Interview at Mills Restaurant</h3>
               <p class="text">
-                On 03/07/2024, an interview was conducted with Gerald, the chef of Mills Restaurant, located on Mawanda Road next to the police station to discuss the various hazards present in the restaurant environment. The interview provided insights into the common risks faced by restaurant staff and the measures taken to mitigate these hazards. This information helps us understand our use case better.
+                On 03/07/2024, an interview was conducted with Gerald, the chef
+                of Mills Restaurant, located on Mawanda Road next to the police
+                station to discuss the various hazards present in the restaurant
+                environment. The interview provided insights into the common
+                risks faced by restaurant staff and the measures taken to
+                mitigate these hazards. This information helps us understand our
+                use case better.
                 <br />
                 <strong>Telephone Number:</strong> 0703156993
               </p>
               <h3>Common Hazards Identified</h3>
-              <p class="text">
+              <div class="text">
                 During the interview, several key hazards were identified:
                 <ul>
-                  <li>Open Flames: Open flames from stoves and grills can quickly become uncontrollable.</li>
-                  <li>Faulty Electrical Equipment: Malfunctioning or poorly maintained electrical devices can cause sparks or short circuits.</li>
-                  <li>Flammable Materials: Items like cooking oil, paper products, and cleaning chemicals can easily ignite.</li>
-                  <li>Charcoal Stoves: Charcoal stoves pose a fire risk due to the high heat and potential for embers to spread.</li>
+                  <li>
+                    Open Flames: Open flames from stoves and grills can quickly
+                    become uncontrollable.
+                  </li>
+                  <li>
+                    Faulty Electrical Equipment: Malfunctioning or poorly
+                    maintained electrical devices can cause sparks or short
+                    circuits.
+                  </li>
+                  <li>
+                    Flammable Materials: Items like cooking oil, paper products,
+                    and cleaning chemicals can easily ignite.
+                  </li>
+                  <li>
+                    Charcoal Stoves: Charcoal stoves pose a fire risk due to the
+                    high heat and potential for embers to spread.
+                  </li>
                 </ul>
-                Gerald also mentioned there are no proactive actions to monitor temperature changes within the kitchen. Currently, he and his colleagues rely on traditional smoke detectors.
-              </p>
+                Gerald also mentioned there are no proactive actions to monitor
+                temperature changes within the kitchen. Currently, he and his
+                colleagues rely on traditional smoke detectors.
+              </div>
               <h3>Conclusion</h3>
               <p class="text">
-                This interview underscored the importance of implementing an automated alert system like ours in restaurant kitchens. By continuously monitoring temperature levels and sending alerts when thresholds are exceeded, the system can help prevent fires and mitigate the damage caused by such incidents.
+                This interview underscored the importance of implementing an
+                automated alert system like ours in restaurant kitchens. By
+                continuously monitoring temperature levels and sending alerts
+                when thresholds are exceeded, the system can help prevent fires
+                and mitigate the damage caused by such incidents.
               </p>
               <h3>Impact</h3>
-              <p class="text">
+              <div class="text">
                 Our system can:
                 <ul>
                   <li>Reduce response time to potential fire hazards.</li>
                   <li>Increase safety for employees and customers.</li>
-                  <li>Minimize property damage by alerting responsible individuals promptly.</li>
+                  <li>
+                    Minimize property damage by alerting responsible individuals
+                    promptly.
+                  </li>
                 </ul>
-              </p>
+              </div>
               <h3>Future Work</h3>
-              <p class="text">
+              <div class="text">
                 To further enhance our system, we plan to:
                 <ul>
-                  <li>Incorporate smoke detection capabilities to provide a comprehensive fire alert solution.</li>
-                  <li>Develop a mobile application for real-time monitoring and alert management.</li>
-                  <li>Integrate with existing fire suppression systems for automated responses.</li>
+                  <li>
+                    Incorporate smoke detection capabilities to provide a
+                    comprehensive fire alert solution.
+                  </li>
+                  <li>
+                    Develop a mobile application for real-time monitoring and
+                    alert management.
+                  </li>
+                  <li>
+                    Integrate with existing fire suppression systems for
+                    automated responses.
+                  </li>
                 </ul>
-              </p>
+              </div>
             </div>
           </div>
 
