@@ -6,6 +6,7 @@ QUICK ALERT RESPONSE TO FIRES
 - [Project Link](https://quick-alert-system.vercel.app/)
 - [GITHUB REPOSITORY](https://github.com/Naggayi-Daphne-Pearl/quick-alert-system)
 
+
 ## About Our System
 - Our system detects preset temperature and smoke ranges and sends notifications to responsible individuals, even if they are not
 nearby. 
