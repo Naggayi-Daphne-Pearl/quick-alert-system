@@ -1,15 +1,102 @@
-<div class="banner">
-  <div class="banner-table flex-column">
-    <div class="flex-row">
-      <div class="flex-item flex-column">
-        <h2>This is the footer area</h2>
-        <p class="text add-bottom-margin-large">
-          Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel
-          augue. <a href="javascript:void(0)">Curabitur ullamcorper ultricies nisi</a>. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget
-          condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit
-          vel, luctus pulvinar, hendrerit id, lorem.
-        </p>
-      </div>
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h2>Quick Alert Fire System</h2>
+      <p class="text">
+        Our system detects temperature and smoke levels within preset ranges to
+        monitor environmental conditions. When thresholds are exceeded, it sends
+        immediate notifications to designated individuals,
+        <a href="javascript:void(0)">
+          regardless of their proximity to the location.</a
+        >.To stop receiving further notifications, the system requires that
+        recipients acknowledge these alerts.
+      </p>
+    </div>
+
+    <div class="footer-section">
+      <h2>Contact Us</h2>
+      <address>
+        Makerere University<br />
+        Kampala, Uganda<br />
+        Phone: 256 754769769<br />
+        Email:
+        <a href="mailto:daphnepearl101@gmail.com">daphnepearl101@gmail.com</a>
+      </address>
     </div>
   </div>
-</div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Quick Alert Fire System All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    color: #343a40;
+    font-family: Arial, sans-serif;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+  }
+
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 40px;
+  }
+
+  .footer-section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #007bff;
+  }
+
+  .footer-section p,
+  .footer-section address {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .footer-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
+
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    color: #343a40;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+</style>
